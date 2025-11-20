@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2021.5 (Evaluation Version) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="350mm" height="180mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 350 180"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="201mm" height="121mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 201 121"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
@@ -14,7 +14,6 @@ viewBox="0 0 350 180"
 		</font-face-src>
 	</font-face>
    <missing-glyph><path d="M0 0z"/></missing-glyph>
-   <glyph unicode="D" horiz-adv-x="759" d="M357.833 699.999l-321.668 0 0 -699.999 321.668 0c271.666,0 375.001,150.833 375.001,350.003 0,199.164 -103.335,349.997 -375.001,349.997zm-0.832679 -559.997l-155.002 0 1.66536 419.995 153.337 0c135.833,0 209.168,-74.9942 209.168,-209.995 0,-135 -73.3348,-210 -209.168,-210z"/>
    <glyph unicode="c" horiz-adv-x="774" d="M406.164 -23.002c155.002,0 310.837,68.3328 345.001,274.666l-159.166 0c-30.0001,-90.6616 -99.1655,-130.666 -185.835,-130.666 -124.164,0 -219.166,94.8368 -219.166,229.004 0,135 95.0022,228.998 219.166,228.998 86.6695,0 155.835,-39.8328 185.835,-129.833l159.166 0c-34.1635,205.5 -191.664,273.833 -345.001,273.833 -226.666,0 -383.162,-153.166 -383.162,-372.999 0,-219.833 156.496,-373.005 383.162,-373.005z"/>
    <glyph unicode="d" horiz-adv-x="759" d="M357.833 699.999l-321.668 0 0 -699.999 321.668 0c271.666,0 375.001,150.833 375.001,350.003 0,199.164 -103.335,349.997 -375.001,349.997zm-0.832679 -559.997l-155.002 0 1.66536 419.995 153.337 0c135.833,0 209.168,-74.9942 209.168,-209.995 0,-135 -73.3348,-210 -209.168,-210z"/>
    <glyph unicode="e" horiz-adv-x="660" d="M36.1654 0.165355l588.999 0 0 136.666 -423.332 0 0 154.17 408.332 0 0 120 -408.332 0 0 153.166 423.332 0 0 135.833 -588.999 0 0 -699.834z"/>
@@ -27,16 +26,16 @@ viewBox="0 0 350 180"
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Integral CF";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-    .str0 {stroke:#C5C6C6;stroke-width:0.0762;stroke-miterlimit:22.9256}
+    .str0 {stroke:#898989;stroke-width:0.0762;stroke-miterlimit:22.9256}
     .fil1 {fill:#FEFEFE}
-    .fil0 {fill:#C5C6C6}
+    .fil0 {fill:#898989}
     .fnt0 {font-weight:normal;font-size:16.9333px;font-family:'Integral CF'}
    ]]>
   </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0 str0" d="M81.1183 36.53l191.1076 0c2.4455,0 4.4462,2.0007 4.4462,4.4461l0 111.1077c0,2.4454 -2.0007,4.4462 -4.4462,4.4462l-191.1076 0c-2.4455,0 -4.4462,-2.0008 -4.4462,-4.4462l0 -111.1077c0,-2.4454 2.0007,-4.4461 4.4462,-4.4461zm8.8038 10.2739l40 0c2.75,0 5,2.25 5,5l0 10c0,2.75 -2.25,5 -5,5l-40 0c-2.75,0 -5,-2.25 -5,-5l0 -10c0,-2.75 2.25,-5 5,-5zm133.5 0l40 0c2.75,0 5,2.25 5,5l0 10c0,2.75 -2.25,5 -5,5l-40 0c-2.75,0 -5,-2.25 -5,-5l0 -10c0,-2.75 2.25,-5 5,-5z"/>
-  <text x="105.5183" y="102.4566"  class="fil1 fnt0">Disconnected</text>
+  <path class="fil0 str0" d="M147.25 10.8106l40 0c2.75,0 5,2.25 5,5l0 10c0,2.75 -2.25,5 -5,5l-40 0c-2.75,0 -5,-2.25 -5,-5l0 -10c0,-2.75 2.25,-5 5,-5zm-133.5 0l40 0c2.75,0 5,2.25 5,5l0 10c0,2.75 -2.25,5 -5,5l-40 0c-2.75,0 -5,-2.25 -5,-5l0 -10c0,-2.75 2.25,-5 5,-5zm-8.8038 -10.2739l191.1076 0c2.4455,0 4.4462,2.0007 4.4462,4.4461l0 111.1077c0,2.4454 -2.0007,4.4462 -4.4462,4.4462l-191.1076 0c-2.4455,0 -4.4462,-2.0008 -4.4462,-4.4462l0 -111.1077c0,-2.4454 2.0007,-4.4461 4.4462,-4.4461z"/>
+  <text x="29.3462" y="66.4633"  class="fil1 fnt0">disconnected</text>
  </g>
 </svg>
