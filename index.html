@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamepad Viewer Assets – Ultra Arcade</title>
+    <title>Ultra Arcade – Gamepad Viewer Assets</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,13 +13,13 @@
         }
         h1 {
             color: #00e0ff;
-            margin-bottom: 10px;
         }
-        p {
-            margin-bottom: 30px;
+        h2 {
+            margin-top: 30px;
+            color: #7effb2;
         }
         a {
-            color: #7effb2;
+            color: #ffa0ff;
             text-decoration: none;
         }
         a:hover {
@@ -29,42 +29,52 @@
             line-height: 1.6em;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Ultra Arcade – Gamepad Viewer Assets</h1>
-        <p>This GitHub Pages site hosts SVG/PNG assets for Gamepad Viewer skins.</p>
+        <p>This page lists all available assets for Gamepad Viewer.</p>
 
-        <h2>Available Files</h2>
-        <ul id="file-list">
-            <!-- Files will be inserted by script -->
-        </ul>
+        <h2>Root Files</h2>
+        <ul id="root-files"></ul>
+
+        <h2>Flatbox WXM</h2>
+        <ul id="flatbox"></ul>
     </div>
 
     <script>
-        // Auto-list files via GitHub API
         const repo = "ultra-arcade/gamepad-viewer-ua";
 
+        // List files in root
         fetch(`https://api.github.com/repos/${repo}/contents`)
-            .then(response => response.json())
-            .then(files => {
-                const list = document.getElementById("file-list");
-                files
-                    .filter(f => f.name.endsWith(".svg") || f.name.endsWith(".png") || f.name.endsWith(".jpg"))
+            .then(res => res.json())
+            .then(items => {
+                const list = document.getElementById("root-files");
+                items
+                    .filter(f => f.name.match(/\.(svg|png|jpg)$/i))
                     .forEach(file => {
                         const li = document.createElement("li");
-                        const link = document.createElement("a");
-                        link.href = file.download_url;
-                        link.textContent = file.name;
-                        li.appendChild(link);
+                        li.innerHTML = `<a href="${file.path}">${file.name}</a>`;
                         list.appendChild(li);
                     });
-            })
-            .catch(err => {
-                document.getElementById("file-list").innerHTML = "<li>Could not load file list.</li>";
+            });
+
+        // List files in Flatbox WXM
+        fetch(`https://api.github.com/repos/${repo}/contents/Flatbox%20WXM`)
+            .then(res => res.json())
+            .then(items => {
+                const list = document.getElementById("flatbox");
+                items
+                    .filter(f => f.name.match(/\.(svg|png|jpg)$/i))
+                    .forEach(file => {
+                        const url = `Flatbox%20WXM/${file.name}`;
+                        const li = document.createElement("li");
+                        li.innerHTML = `<a href="${url}">${file.name}</a>`;
+                        list.appendChild(li);
+                    });
             });
     </script>
 </body>
