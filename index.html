@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepad Viewer Assets – Ultra Arcade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #eee;
+            padding: 40px;
+        }
+        h1 {
+            color: #00e0ff;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        a {
+            color: #7effb2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            line-height: 1.6em;
+        }
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ultra Arcade – Gamepad Viewer Assets</h1>
+        <p>This GitHub Pages site hosts SVG/PNG assets for Gamepad Viewer skins.</p>
+
+        <h2>Available Files</h2>
+        <ul id="file-list">
+            <!-- Files will be inserted by script -->
+        </ul>
+    </div>
+
+    <script>
+        // Auto-list files via GitHub API
+        const repo = "ultra-arcade/gamepad-viewer-ua";
+
+        fetch(`https://api.github.com/repos/${repo}/contents`)
+            .then(response => response.json())
+            .then(files => {
+                const list = document.getElementById("file-list");
+                files
+                    .filter(f => f.name.endsWith(".svg") || f.name.endsWith(".png") || f.name.endsWith(".jpg"))
+                    .forEach(file => {
+                        const li = document.createElement("li");
+                        const link = document.createElement("a");
+                        link.href = file.download_url;
+                        link.textContent = file.name;
+                        li.appendChild(link);
+                        list.appendChild(li);
+                    });
+            })
+            .catch(err => {
+                document.getElementById("file-list").innerHTML = "<li>Could not load file list.</li>";
+            });
+    </script>
+</body>
+</html>
